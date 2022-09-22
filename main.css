@@ -3,21 +3,22 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background-color: #B7C4CF;
 }
 .container {
   width: 100%;
 }
 .header {
   width: 100%;
-  height: 20px;
+  height: 10px;
 }
 .container-1 {
   padding: 20px 20px;
   margin: 100px 400px;
+  margin-bottom: 10px;
 }
 .logo {
   background-color: #fff;
-  background-color: #adddd0;
 }
 .logo img {
   height: 90px;
@@ -25,14 +26,17 @@ body {
 }
 
 .login-box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: ;
+  margin-left: 30px;
   border: 0.3px solid #ccc;
   border-radius: 15px;
-  height: 450px;
+  height: 380px;
   width: 550px;
 }
 
 .login-name {
-  text-align: center;
+  text-align: center;280
 }
 
 form input {
@@ -44,5 +48,48 @@ form input {
   outline: none;
   padding: 5px 8px;
   margin-left: 150px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+}
+button{
+  height: 45px;
+  width:280px;
+  margin-left: 150px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #1f84d6;
+  font-size:1em;
+  font-weight:500;
+  transition: background 0.3s;
+}
+
+button:hover{
+  background-color: #D2DAFF;
+}
+.container-2{
+  width: 100%;
+  background-color: #fff;
+  width: 100%;
+  height: 150px;
+}
+.content{
+  background-color: #fff;
+}
+.list{
+  display: inline-block;
+}
+.content h4{
+padding-top:30px ;
+margin-left: 90px;
+font-size: 1em;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.content li{
+  margin-left: 50px;
 }
