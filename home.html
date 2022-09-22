@@ -22,9 +22,14 @@
 
       <div class="container-1">
         <div class="login-box">
-          <form action="">
+          <form
+            name="myForm"
+            action="index.html"
+            onsubmit="return formValidation()"
+          >
             <h1 class="login-name">Login</h1>
             <input
+              id="email"
               class="email-1"
               type="email"
               name="email"
@@ -32,10 +37,11 @@
             />
             <input
               type="password"
-              name="current-password"
+              name="password"
               placeholder="Your Password"
             />
             <button type="submit" name="submit">Login in</button>
+            <p id="para"></p>
           </form>
         </div>
       </div>
