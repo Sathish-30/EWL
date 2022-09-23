@@ -3,17 +3,16 @@ const fetchinfo = fetch("https://randomuser.me/api/?results=20")
   .then((data) => {
     window.localStorage.setItem("user", JSON.stringify(data));
   });
-console.log(JSON.parse(localStorage.getItem("user")));
-console.log(Object.keys(localStorage));
-console.log(Object.keys(localStorage).length);
+const userProfile = JSON.parse(localStorage.getItem("user"));
+console.log(userProfile);
 
-//Form validation..
-const msgSender = document.getElementById("para");
-const mail = document.myForm.email.value;
-const password = document.myForm.password.value;
+const msgsender = document.getElementById("para");
 const formValidation = () => {
-  if (mail == null && password == null) {
-    msgSender.innerHTML = "Enter a valid email ID";
+  let mailId = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  if (mailId == null || password == null) {
     return false;
+  } else if (password < 6) {
+    return true;
   }
 };
