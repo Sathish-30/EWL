@@ -22,25 +22,27 @@
 
       <div class="container-1">
         <div class="login-box">
-          <form name="myForm" onsubmit="return formValidation()">
+          <form name="myForm">
             <h1 class="login-name">Login</h1>
             <input
               id="email"
               class="email-1"
-              type="email"
+              type="emi"
               name="email"
               placeholder="Your Email"
               required
             />
             <input
-              id="password"
+              id="pass"
               type="password"
               name="password"
               placeholder="Your Password"
               autocomplete="on"
               required
             />
-            <button type="submit" name="submit">Login in</button>
+            <button type="submit" name="submit" onclick="formValidation()">
+              Login in
+            </button>
             <p id="para"></p>
           </form>
         </div>
